@@ -1,0 +1,11 @@
+{
+  "Comment": "ETL pipeline with API + HANA to Redshift",
+  "StartAt": "RunETLJob",
+  "States": {
+    "RunETLJob": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:your-region:your-account-id:function:run-etl-job",
+      "End": true
+    }
+  }
+}
